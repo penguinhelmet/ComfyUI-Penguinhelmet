@@ -179,5 +179,13 @@ class ImagePicker:
         return True
 
 
-NODE_CLASS_MAPPINGS = {"PH_ImagePicker": ImagePicker}
-NODE_DISPLAY_NAME_MAPPINGS = {"PH_ImagePicker": "Image Picker (Input / Output)"}
+class ImagePickerLegacy(ImagePicker):
+    """Old id from before the pack was renamed; kept so saved workflows still load."""
+    DEPRECATED = True
+
+
+NODE_CLASS_MAPPINGS = {"PH_ImagePicker": ImagePicker, "ImagePickerIO": ImagePickerLegacy}
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "PH_ImagePicker": "Image Picker (Input / Output)",
+    "ImagePickerIO": "Image Picker (Input / Output) [old id]",
+}

@@ -1,7 +1,7 @@
 import { app } from "../../scripts/app.js";
 import { api } from "../../scripts/api.js";
 
-const NODE = "PH_ImagePicker";
+const NODES = ["PH_ImagePicker", "ImagePickerIO"]; // second is the old id
 const SOURCES = ["input", "output"];
 const RENDER_STEP = 300;
 
@@ -401,7 +401,7 @@ function setupNode(node) {
 app.registerExtension({
   name: "penguinhelmet.image_picker",
   async beforeRegisterNodeDef(nodeType, nodeData) {
-    if (nodeData.name !== NODE) return;
+    if (!NODES.includes(nodeData.name)) return;
     const created = nodeType.prototype.onNodeCreated;
     nodeType.prototype.onNodeCreated = function () {
       const r = created?.apply(this, arguments);
