@@ -1,0 +1,13 @@
+[project]
+name = "comfyui-penguinhelmet"
+description = "Custom nodes by penguinhelmet: Image Picker (browse input/output folders as a gallery, upload, works over SSH/remote)."
+version = "0.1.0"
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/penguinhelmet/ComfyUI-Penguinhelmet"
+
+[tool.comfy]
+PublisherId = "penguinhelmet"
+DisplayName = "ComfyUI-Penguinhelmet"
