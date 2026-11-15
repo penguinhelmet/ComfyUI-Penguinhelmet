@@ -50,7 +50,11 @@ when ComfyUI runs on a remote server.
 
 Outputs: `image`, `mask` (same as core Load Image) and `path` (absolute file path).
 
-### Remote ComfyUI (SSH / LAN)
+### Local or remote
+
+It works on a normal local ComfyUI (Desktop, Portable or a manual install) with
+no extra setup. SSH is only needed if you open a ComfyUI that runs on a
+*different* machine.
 
 Everything goes through the ComfyUI server, so it works the same when ComfyUI
 runs on another machine. Listing, thumbnails and loading happen on the server.
