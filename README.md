@@ -83,6 +83,18 @@ ssh -L 8188:127.0.0.1:8188 user@server
 2. Put frontend code (if any) in `js/<name>.js`.
 3. Prefix node ids with `PH_` and use the `penguinhelmet/...` category.
 
-## License
+## About and license
 
-MIT
+- **Where it lives:** this GitHub repository is the only home of the pack. Bug
+  reports and ideas are welcome in
+  [Issues](https://github.com/penguinhelmet/ComfyUI-Penguinhelmet/issues).
+- **License:** [MIT](LICENSE). You can use, copy, change and share the code,
+  including in commercial work. Keep the copyright notice with it.
+- **Built with AI help:** much of the code was written with an AI coding
+  assistant. Every node is tried in a real ComfyUI before it is released.
+- **No warranty:** the software comes as is. Keep a backup of workflows and images
+  you care about.
+
+ComfyUI-Penguinhelmet is an independent, personal project. It is not affiliated
+with, endorsed by or sponsored by Comfy Org or the ComfyUI project. Product names
+and trademarks belong to their owners.
